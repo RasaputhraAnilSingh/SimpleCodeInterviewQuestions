@@ -33,7 +33,7 @@ namespace ConsoleApp1
             //concepts.fibonacciSeries();
             //.concepts.reverseString();
             //concepts.removeDuplicateValuesFromArray();
-            concepts.findHighestValueInArray();
+            //concepts.findHighestValueInArray();
             Console.ReadLine();
         }
     }
