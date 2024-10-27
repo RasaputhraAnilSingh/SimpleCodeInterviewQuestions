@@ -42,7 +42,9 @@ namespace ConsoleApp1
             }
             */
             // concepts.findCountOfVowelsInString();
-            concepts.givenTwoStringIsEqual();
+            //concepts.givenTwoStringIsEqual();
+            //concepts.nonRepeatingLettersInString();
+            concepts.countOfRepitativeLetters();
             Console.ReadLine();
         }
     }
