@@ -191,6 +191,71 @@ namespace ConsoleApp1
            
 
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        public void nonRepeatingLettersInString() 
+        {
+            Console.WriteLine("Enter a word : ");
+            string word1 = Console.ReadLine();
+            int count = 0;
+            string[] uniqLetters = new string[word1.Length];
+
+            for (int x = 0; x < word1.Length; x++)//anill
+            {
+                bool isUniq = false;
+                for(int y = 0; y < count; y++)
+                {
+                    if (word1[x].ToString() == uniqLetters[y])
+                    {
+                        isUniq = true;
+                        break;
+                    }
+                   
+                }
+                if (isUniq == false)
+                {
+                    uniqLetters[count] = word1[x].ToString();
+                    count++;
+                }
+            }
+            string[] isUniqletters = new string[count];
+            for (int x = 0; x < isUniqletters.Length; x++) 
+            {
+                isUniqletters[x] = uniqLetters[x];
+            }
+            for (int y = 0; y < count; y++) 
+            {
+                Console.Write(isUniqletters[y]);
+            }
+        }
+        /// <summary>
+        /// This method used to get count of Repitative letters in string 
+        /// </summary>
+        public void countOfRepitativeLetters()
+        {
+            Console.WriteLine("Enter a word : ");
+            string word1 = Console.ReadLine();
+            string[] strings = new string[word1.Length];
+
+            for (int x = 0; x < word1.Length; x++) 
+            {
+                int count = 0;
+                for (int y = 0; y < word1.Length; y++) 
+                {
+                    if (word1[x] == word1[y])
+                    {
+                        count++;
+                        strings[x] = word1[x].ToString() + count.ToString();
+                    }
+                }
+            }
+            strings = strings.Distinct().ToArray();
+            for (int x = 0; x < strings.Length; x++) 
+            { 
+                Console.WriteLine(strings[x]);  
+            }
+        }
     }
     
 }
