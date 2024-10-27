@@ -31,7 +31,7 @@ namespace ConsoleApp1
             //.concepts.reverseString();
             //concepts.removeDuplicateValuesFromArray();
             //concepts.findHighestValueInArray();
-            bool isPalidrome = concepts.IsStringPalindrome();
+            /*bool isPalidrome = concepts.IsStringPalindrome();
             if (isPalidrome)
             {
                 Console.WriteLine("Palindromic");
@@ -40,6 +40,9 @@ namespace ConsoleApp1
             {
                 Console.WriteLine("Non-Palindromic");
             }
+            */
+            // concepts.findCountOfVowelsInStrin();
+            concepts.givenTwoStringIsEqual();
             Console.ReadLine();
         }
     }
