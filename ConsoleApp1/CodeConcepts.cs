@@ -138,7 +138,7 @@ namespace ConsoleApp1
         /// <summary>
         /// To find the count of Vowels in a word.
         /// </summary>
-        public void findCountOfVowelsInStrin()
+        public void findCountOfVowelsInString()
         {
             Console.WriteLine("Enter a Name : ");
             string name = Console.ReadLine();
@@ -156,6 +156,9 @@ namespace ConsoleApp1
             }
             Console.WriteLine(count) ;
         }
+        /// <summary>
+        /// check two string are same are not using loop
+        /// </summary>
         public void givenTwoStringIsEqual()
         {
             Console.WriteLine("Enter first word : ");

@@ -41,7 +41,7 @@ namespace ConsoleApp1
                 Console.WriteLine("Non-Palindromic");
             }
             */
-            // concepts.findCountOfVowelsInStrin();
+            // concepts.findCountOfVowelsInString();
             concepts.givenTwoStringIsEqual();
             Console.ReadLine();
         }
