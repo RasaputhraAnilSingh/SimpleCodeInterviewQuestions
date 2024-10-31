@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ConsoleApp1;
+using System;
+using System.Threading;
 
 
 namespace ConsoleApp1
@@ -44,7 +46,11 @@ namespace ConsoleApp1
             // concepts.findCountOfVowelsInString();
             //concepts.givenTwoStringIsEqual();
             //concepts.nonRepeatingLettersInString();
-            concepts.countOfRepitativeLetters();
+            //concepts.countOfRepitativeLetters();
+
+            //DesignPatternOfSingletone
+            var a = UploadServices.Intance(1);
+            var b = UploadServices.Intance(2);
             Console.ReadLine();
         }
     }
