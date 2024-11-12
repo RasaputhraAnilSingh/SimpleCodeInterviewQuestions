@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
-    class UploadServices
+    class ImplementationOfSingleton
     {
-        private static UploadServices instance;
+        private static ImplementationOfSingleton instance;
         private static int coutOfInstance = 0;
         private static List<string> menu;
-        private UploadServices() 
+        private ImplementationOfSingleton() 
         {
             menu = new List<string>()
             {
@@ -20,11 +20,11 @@ namespace ConsoleApp1
 
         
 
-        public static UploadServices Intance(int a)
+        public static ImplementationOfSingleton Intance(int a)
         {
             if (instance == null)
             {
-                UploadServices _instance = new UploadServices ();
+                ImplementationOfSingleton _instance = new ImplementationOfSingleton ();
                 instance = _instance;
                 coutOfInstance = a;
             }
