@@ -6,12 +6,13 @@ namespace ConsoleApp1
 {
     public class CodeConcepts
     {
+       
         /// <summary>
         /// Two Dimensional Array
         /// </summary>
         public void twoDimenalArray()
         {
-
+           
             int[,] array = new int[2, 3]
             {
                 { 1,2,3},{ 5,6,7}
