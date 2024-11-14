@@ -257,6 +257,16 @@ namespace ConsoleApp1
                 Console.WriteLine(strings[x]);  
             }
         }
+
+        public void Operation(ref int a, ref int b)
+        {
+            int g = a + b;
+        }
+        public void Operation1(out int a, out int b)
+        {
+            a = 10;
+            b = 10;
+        }
     }
     
 }
