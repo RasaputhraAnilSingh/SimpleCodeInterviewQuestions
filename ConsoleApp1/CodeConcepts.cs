@@ -258,6 +258,7 @@ namespace ConsoleApp1
             }
         }
 
+
         public void Operation(ref int a, ref int b)
         {
             int g = a + b;
@@ -266,6 +267,26 @@ namespace ConsoleApp1
         {
             a = 10;
             b = 10;
+        }
+        public void BubbleSort()
+        {
+            
+            
+           int[] array = { 5, 2, 42, 3, 2, 8, 9 };
+           for(int x = 0; x < array.Length; x++)
+            {
+                for (int y = 0; y < array.Length - 1 - x; y++)
+                {
+                    if (array[y] < array[y + 1])
+                    {
+                        int temp  = array[y + 1];
+                        array[y + 1] = array[y];
+                        array[y] = temp;
+                    }
+                }    
+
+            }
+            Console.Write(String.Join(",", array));
         }
     }
     

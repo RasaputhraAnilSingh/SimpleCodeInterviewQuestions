@@ -29,8 +29,7 @@ namespace ConsoleApp1
 
             #region fibonacciSeries,twoDimenalArray,reverseString,removeDuplicateValuesFromArray,findHighestValueInArray
 
-            //CodeConcepts
-            // CodeConcepts concepts = new CodeConcepts();
+
 
 
             //concepts.twoDimenalArray();
@@ -58,48 +57,63 @@ namespace ConsoleApp1
             var a = ImplementationOfSingleton.Intance(1);
             var b = ImplementationOfSingleton.Intance(2);
             #endregion
-            #region Difference between Asychro vs Sychro example
-            /*
-            //asychronos
-            Asychro asychro = new Asychro();
-            int mul = asychro.Mul(10, 11);
-            int sum = asychro.Sum(10, 11);
-            int sub = asychro.Sub(10, 11);
-            List<int> values = new List<int>();
-            values.Add(sum);
-            values.Add(sub);
-            values.Add(sum);
-            foreach (int value in values)
-            {
-                Console.WriteLine(value + " ");
-            }
-            List<int> values1 = new List<int>();
+#region Difference between Asychro vs Sychro example
+/*
+//asychronos
+Asychro asychro = new Asychro();
+int mul = asychro.Mul(10, 11);
+int sum = asychro.Sum(10, 11);
+int sub = asychro.Sub(10, 11);
+List<int> values = new List<int>();
+values.Add(sum);
+values.Add(sub);
+values.Add(sum);
+foreach (int value in values)
+{
+    Console.WriteLine(value + " ");
+}
+List<int> values1 = new List<int>();
 
-            Task task1 = new Task(() =>
-            {
+Task task1 = new Task(() =>
+{
 
-                int suba = asychro.Sub(4, 5);
-                values1.Add(suba);
-            });
-            Task task2 = new Task(() =>
-            {
-                int suma = asychro.Sum(4, 5); values1.Add(suma);
-            });
-            Task task3 = new Task(() =>
-            {
-                int mula = asychro.Mul(4, 5); values1.Add(mula);
-            });
-            task1.Start();
-            task2.Start();
-            task3.Start();
+    int suba = asychro.Sub(4, 5);
+    values1.Add(suba);
+});
+Task task2 = new Task(() =>
+{
+    int suma = asychro.Sum(4, 5); values1.Add(suma);
+});
+Task task3 = new Task(() =>
+{
+    int mula = asychro.Mul(4, 5); values1.Add(mula);
+});
+task1.Start();
+task2.Start();
+task3.Start();
 
-            */
-            #endregion
+*/
+#endregion
+
+
+            //Task task1 = new Task(() => { 
+
+            //    int suba = asychro.Sub(4, 5);
+            //    values1.Add(suba);
+            //});
+            //Task task2 = new Task(() => { int suma = asychro.Sum(4, 5); values1.Add(suma);
+            //});
+            //Task task3 = new Task(() => { int mula = asychro.Mul(4, 5); values1.Add(mula);
+            //});
+            //task1.Start();
+            //task2.Start();
+            //task3.Start();
 
             //foreach (int value in values1)
             //{
             //    Console.WriteLine(value + " ");
             //}
+
 
             #region Ref and Out keywords
             CodeConcepts codeConcepts = new CodeConcepts();
@@ -109,6 +123,14 @@ namespace ConsoleApp1
             codeConcepts.Operation(ref m, ref n);
             codeConcepts.Operation1(out int x, out int y);
             #endregion
+            #region Bubble sort
+            CodeConcepts codeConcepts1   = new CodeConcepts();
+            codeConcepts1.BubbleSort();
+            
+            
+
+#endregion
+
             Console.ReadLine();
         }
     }
